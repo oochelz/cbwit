@@ -1,5 +1,6 @@
 .small-6.large-2.columns
-  .lunch
+  - class_name = "lunch-#{lunch_bunch.number}"
+  %div{ class: class_name }
     %h4= "Group #{lunch_bunch.number}"
     %ul
       - lunch_bunch.people.each do |person|
