@@ -16,3 +16,8 @@
 /tmp
 
 /.idea
+/log/*.log
+/tmp
+/bin
+/coverage
+.DS_Store
