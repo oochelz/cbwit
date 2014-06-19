@@ -23,21 +23,19 @@
 
     %section.lunches
       .row
-        .small-12.columns
+        .small-7.columns
           %h2= 'CBWIT Lunch Bunches'
+        .small-3.columns.join-lunch
+          %a= 'Join the next lunch'
       .row
-        .small-2.columns
-          .lunch= 'Group 1'
-        .small-2.columns
-          .lunch= 'Group 2'
-        .small-2.columns
-          .lunch= 'Group 3'
-        .small-2.columns
-          .lunch= 'Group 4'
-        .small-2.columns
-          .lunch= 'Group 5'
-        .small-2.columns
-          .lunch= 'Group 6'
+        .small-12.columns
+          CBWIT lunch bunches happen the first Tuesday of every month.
+          Those in the Atlanta office join random groups and go to lunch together.
+      .row.bump
+        .small-12.columns
+          Below are the lunch groups for the next lunch, happening on July 1, 2014.
+      .row.bump
+        = render partial: 'lunch_bunch', collection: lunch_bunches
 
   .small-12.large-4.columns
     %section.twitter-feed
@@ -52,4 +50,4 @@
     .small-12.columns
       %h2= 'This is a Hackathon project'
   .row
-    .small-12.columns= 'June 19, 2014'
+    .small-12.columns= 'Brought to you by Alex BS and Chelsea Y, June 19, 2014'
