@@ -4,7 +4,7 @@
       %h1= 'Careerbuilder Women in Technology'
 
 .row.main
-  .small-12.large-9.columns
+  .small-12.large-8.columns
     %section.events
       .row
         .small-12.columns
@@ -39,20 +39,13 @@
         .small-2.columns
           .lunch= 'Group 6'
 
-  .small-12.large-3.columns
-    %section.photos
+  .small-12.large-4.columns
+    %section.twitter-feed
       .row
         .small-12.columns
-          %h2= 'Photos'
-      .row
-        .small-12.columns
-          .photo-1= 'Twitter? Google? Dropbox?'
-      .row
-        .small-12.columns
-          .photo-2
-      .row
-        .small-12.columns
-          .photo-3
+          %a.twitter-timeline{ href: 'https://twitter.com/hashtag/cbwit', 'data-widget-id' => '479694527922323456' }= '#cbwit Tweets'
+          :javascript
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 %footer
   .row
