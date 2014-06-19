@@ -11,7 +11,7 @@
           %h2= 'Upcoming events'
       .row
         .small-12.columns
-          .events-blob= 'Possibly pull from Outlook calendar, or a Google calendar...'
+          %iframe.events-blob{:src => "https://www.google.com/calendar/embed?showTitle=0&showCalendars=0&mode=AGENDA&height=600&wkst=1&bgcolor=%23FF9D81&src=cdalevqtm90rcd5bj645rqbmdegi2jgf@import.calendar.google.com&color=%23FF9D81&ctz=America/New_York", :style => " border-width:0 ", :width => "600", :height => "600", :frameborder => "0", :scrolling => "no"}
 
     %section.forum
       .row
