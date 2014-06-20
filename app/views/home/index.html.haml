@@ -4,7 +4,7 @@
       %h1= 'Careerbuilder Women in Technology'
 
 .row.main
-  .small-12.large-8.columns
+  .small-12.medium-8.columns
     %section.events
       .row
         .small-12.columns
@@ -16,9 +16,9 @@
 
     %section.lunches
       .row
-        .small-7.columns
+        .small-6.columns
           %h2= 'CBWIT Lunch Bunches'
-        .small-3.columns.join-lunch
+        .small-4.columns.join-lunch
           %a{href: '#ask-for-a-name', :data => {:rel => 'popup', :transition => 'pop'}}= 'Join the next lunch'
       .row
         .small-12.columns
@@ -30,15 +30,7 @@
       .row.bump
         = render partial: 'lunch_bunch', collection: lunch_bunches
 
-    %section.forum
-      .row
-        .small-12.columns
-          %h2= 'Forum'
-      .row
-        .small-12.columns
-          .forum-blob= 'Source will most likely be Salesforce. Want this private.'
-
-  .small-12.large-4.columns
+  .small-12.medium-4.columns
     %section.twitter-feed
       .row
         .small-12.columns
