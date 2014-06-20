@@ -5,8 +5,4 @@ class Group
     @number = number
     @people = Array.new
   end
-
-  def add(person)
-    @people << person
-  end
 end
