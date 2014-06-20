@@ -3,11 +3,14 @@ class HomeController < ApplicationController
     @lunch_bunches = load_lunch_bunches
   end
 
+
+
   def join_group
+    lunchName = params[:lunchName]
     group_number = 1 + rand(6)
     @bunches = load_lunch_bunches
     group = @bunches[group_number.to_s]
-    group['people'] << 'New person'
+    group['people'] << lunchName
     @bunches[group_number] = group
     $redis.set('bunches', @bunches.to_json)
   end

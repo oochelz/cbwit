@@ -19,7 +19,7 @@
         .small-7.columns
           %h2= 'CBWIT Lunch Bunches'
         .small-3.columns.join-lunch
-          = link_to 'Join the next lunch', 'join_group'
+          %a{href: '#ask-for-a-name', :data => {:rel => 'popup', :transition => 'pop'}}= 'Join the next lunch'
       .row
         .small-12.columns
           CBWIT lunch bunches happen the first Tuesday of every month.
@@ -52,3 +52,10 @@
       %h2= 'This is a Hackathon project'
   .row
     .small-12.columns= 'Brought to you by Alex BS and Chelsea Y, June 19, 2014'
+
+.ask-for-a-name{:id => 'ask-for-a-name', :data => {:role => 'popup', 'overlay-theme' => 'a'}}
+  %form{action: 'join_group', method: 'get'}
+    Hooray, lunch! What is your name?
+    %input#lunchName{type: 'text', name: 'lunchName'}
+    %input.btn.lunch-join-btn{type: 'submit', value: 'Join!', id: 'joinLunch'}
+
