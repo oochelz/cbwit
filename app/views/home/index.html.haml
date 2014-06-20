@@ -51,11 +51,11 @@
     .small-12.columns
       %h2= 'This is a Hackathon project'
   .row
-    .small-12.columns= 'Brought to you by Alex BS and Chelsea Y, June 19, 2014'
+    .small-12.columns= 'Brought to you by Alex BS and Chelsea Y, June 19-20, 2014'
 
 .ask-for-a-name{:id => 'ask-for-a-name', :data => {:role => 'popup', 'overlay-theme' => 'a'}}
   %form{action: 'join_group', method: 'get'}
     Hooray, lunch! What is your name?
-    %input#lunchName{type: 'text', name: 'lunchName'}
+    %input#lunchName{type: 'text', name: 'lunchName', :required => 'true'}
     %input.btn.lunch-join-btn{type: 'submit', value: 'Join!', id: 'joinLunch'}
 
