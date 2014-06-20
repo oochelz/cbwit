@@ -1,7 +1,7 @@
 .small-6.large-2.columns
-  - class_name = "lunch-#{lunch_bunch.number}"
+  - class_name = "lunch-#{lunch_bunch['number']}"
   %div{ class: class_name }
-    %h4= "Group #{lunch_bunch.number}"
+    %h4= "Group #{lunch_bunch['number']}"
     %ul
-      - lunch_bunch.people.each do |person|
+      - lunch_bunch['people'].each do |person|
         %li= person
